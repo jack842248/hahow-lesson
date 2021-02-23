@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: #f3f3f1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+* {
+  vartical-align: top;
+}
+
+header .header-bar {
+  height: 400px;
+  background: linear-gradient(-45deg, #FFE18D 10%, #FFDA71 10%, #FFDA71 40%, #FFE18D 40%, #FFE18D 60%, #FFDA71 60%, #FFDA71 90%, #FFE18D 90%);
+  background-size: 46px 46px;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.class-card {
+  display: inline-block;
+  width: 260px;
+  margin: 20px 15px;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 0px 12px rgba(79, 76, 75, 0.5);
+          box-shadow: 0px 0px 12px rgba(79, 76, 75, 0.5);
+  cursor: pointer;
+}
+
+.class-card:hover .card-header .book {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.class-card:hover .card-header .pic {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.class-card:hover .card-body .content .progress-bar .inner-bar {
+  width: 200px;
+}
+
+.class-card .card-teacher {
+  position: absolute;
+  top: calc(55px / -2);
+  left: 10%;
+  width: 55px;
+  height: 55px;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  background-size: cover;
+  z-index: 10;
+}
+
+.class-card .card-header {
+  height: 180px;
+  border-radius: 0.25rem 0.25rem 0px 0px;
+  overflow: hidden;
+}
+
+.class-card .card-header .pic {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.25rem 0.25rem 0px 0px;
+  background-color: #333333;
+  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.class-card .card-header .tag {
+  top: 5px;
+  left: 45%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: #f3f3f1;
+  background-color: #EB5E00;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.class-card .card-header .book {
+  position: absolute;
+  bottom: 5%;
+  width: 42px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  color: #FA8B00;
+  background-color: #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.class-card .card-header .book:hover {
+  color: #ffffff;
+  background-color: #EB5E00;
+}
+
+.class-card .card-body {
+  background-color: #ffffff;
+  border-radius: 0px 0px 0.25rem 0.25rem;
+  padding: 30px 20px;
+}
+
+.class-card .card-body .title {
+  padding-bottom: 30px;
+  line-height: 1.2;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.class-card .card-body .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #4F4C4B;
+  letter-spacing: 1.5px;
+}
+
+.class-card .card-body .content .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.class-card .card-body .content .text .price span {
+  color: #FA8B00;
+}
+
+.class-card .card-body .content .text .day span {
+  color: #FA8B00;
+}
+
+.class-card .card-body .content .progress-bar {
+  width: 100%;
+  height: 15px;
+  margin: 10px 0px;
+  border: solid 1px #f3f3f1;
+  overflow: hidden;
+  border-radius: 5rem;
+  background-color: #e0e0db;
+}
+
+.class-card .card-body .content .progress-bar .inner-bar {
+  width: 50px;
+  height: 15px;
+  background-color: #FA8B00;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.class-card .card-body .content .raise {
+  text-align: center;
+}
+
+.class-card .card-body .content .raise span {
+  color: #FA8B00;
+}
+
+.class-card .bottom {
+  height: 5px;
+  background-color: #EB5E00;
+  border-radius: 0px 0px 0.25rem 0.25rem;
+}
+/*# sourceMappingURL=all.css.map */
